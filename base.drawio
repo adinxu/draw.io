@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-17T04:55:30.061Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="IbUQCF-bxMWXbToYCQW9" version="24.6.4" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2024-07-17T05:02:45.870Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="zjepi4bMzZY84LJsyiWZ" version="24.6.4" type="github" pages="10">
   <diagram id="iCEr_DysgvD3d78unO4U" name="frr_zebra_route">
     <mxGraphModel dx="1471" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -4107,12 +4107,8 @@
         <mxCell id="bgfERj0Cl8EPIH0RptVu-91" value="..." style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="bgfERj0Cl8EPIH0RptVu-88" vertex="1">
           <mxGeometry y="104" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="bgfERj0Cl8EPIH0RptVu-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=none;" parent="1" source="bgfERj0Cl8EPIH0RptVu-60" target="bgfERj0Cl8EPIH0RptVu-88" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1857" y="2163" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="bgfERj0Cl8EPIH0RptVu-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=none;elbow=vertical;curved=1;" parent="1" source="bgfERj0Cl8EPIH0RptVu-60" target="bgfERj0Cl8EPIH0RptVu-88" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bgfERj0Cl8EPIH0RptVu-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="bgfERj0Cl8EPIH0RptVu-88" target="bgfERj0Cl8EPIH0RptVu-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
