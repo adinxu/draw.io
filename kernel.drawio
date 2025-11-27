@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.0" pages="14">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Safari/605.1.15" version="29.1.1" pages="14">
   <diagram id="EZiFloyFCKtvxubZ1RHd" name="network">
     <mxGraphModel dx="1693" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3162,7 +3162,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c0ZoZ4gG6LoBvfkcMpz8" name="mm">
-    <mxGraphModel dx="1019" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1156" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3758,7 +3758,7 @@
         <mxCell id="Oen1btJzzUIYSTyrvqBv-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Anon&lt;div&gt;匿名内存&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="810" y="1130" as="geometry" />
         </mxCell>
-        <mxCell id="Oen1btJzzUIYSTyrvqBv-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="File-backed&lt;div&gt;文件映射内存&lt;/div&gt;" vertex="1">
+        <mxCell id="Oen1btJzzUIYSTyrvqBv-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="File-backed&lt;div&gt;文件后备内存&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="90" x="795" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="Oen1btJzzUIYSTyrvqBv-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Private" vertex="1">
@@ -3767,7 +3767,7 @@
         <mxCell id="Oen1btJzzUIYSTyrvqBv-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Shared" vertex="1">
           <mxGeometry height="30" width="60" x="1001.9" y="1000" as="geometry" />
         </mxCell>
-        <mxCell id="Oen1btJzzUIYSTyrvqBv-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="AnonPages" vertex="1">
+        <mxCell id="Oen1btJzzUIYSTyrvqBv-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="AnonPages" vertex="1">
           <mxGeometry height="160" width="78.5" x="920" y="1080" as="geometry" />
         </mxCell>
         <mxCell id="Oen1btJzzUIYSTyrvqBv-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Shmem" vertex="1">
@@ -3782,11 +3782,32 @@
         <mxCell id="Oen1btJzzUIYSTyrvqBv-45" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="背后有文件作为持久化来源&lt;div&gt;回收时不能swap，直接丢弃&lt;/div&gt;&lt;div&gt;缺页时从文件读取&lt;/div&gt;&lt;div&gt;drop_caches可以回收&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="195" x="710" y="1210" as="geometry" />
         </mxCell>
-        <mxCell id="Oen1btJzzUIYSTyrvqBv-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Cached" vertex="1">
+        <mxCell id="Oen1btJzzUIYSTyrvqBv-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="Cached" vertex="1">
           <mxGeometry height="40" width="60" x="1010.4" y="1150" as="geometry" />
         </mxCell>
         <mxCell id="Oen1btJzzUIYSTyrvqBv-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fillStyle=auto;" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, Avenir, Tahoma, Arial, &amp;quot;Lantinghei SC&amp;quot;, &amp;quot;Microsoft Yahei&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft Sans Serif&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, Helvetica, sans-serif; font-size: 16px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;/proc/meminfo字段&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="140" x="1101" y="990" as="geometry" />
+          <mxGeometry height="30" width="159" x="1101" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-3" edge="1" parent="1" source="6V9zXTe7_QeFomHEVq9p-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6V9zXTe7_QeFomHEVq9p-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;caret-color: rgb(56, 58, 66); color: rgb(56, 58, 66); font-family: &amp;quot;Source Code Pro&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;Anonymous Pro&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, Menlo, Monaco, Consolas, Inconsolata, Courier, monospace, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, sans-serif; font-size: 14px; text-align: left; white-space: pre; background-color: rgb(250, 250, 250);&quot;&gt;buff/cache&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="1401.25" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;cached = 文件内容页（page cache）-&amp;gt;物理页层次&lt;/div&gt;&lt;div&gt;buffers = 文件系统元数据页 -&amp;gt;物理页层次&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="41" width="272.5" x="1310" y="1256" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-7" edge="1" parent="1" source="6V9zXTe7_QeFomHEVq9p-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6V9zXTe7_QeFomHEVq9p-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="file-mapped" vertex="1">
+          <mxGeometry height="30" width="79" x="1125.5" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+" vertex="1">
+          <mxGeometry height="30" width="60" x="1270" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="指向 page cache（不是新类型）-&amp;gt;虚拟内存层面" vertex="1">
+          <mxGeometry height="9" width="270" x="1030" y="1260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
