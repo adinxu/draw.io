@@ -3815,6 +3815,9 @@
         <mxCell id="6V9zXTe7_QeFomHEVq9p-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="这个页可被多个进程用" vertex="1">
           <mxGeometry height="80" width="120" x="999.2" y="910" as="geometry" />
         </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-10" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout" value="&lt;p data-start=&quot;3575&quot; data-end=&quot;3622&quot;&gt;&lt;b&gt;/proc/&amp;lt;pid&amp;gt;/smaps字段&lt;/b&gt;&lt;/p&gt;&lt;p data-start=&quot;3575&quot; data-end=&quot;3622&quot; style=&quot;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Private_Dirty ≈ 匿名内存（heap/stack/malloc/COW）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Shared_Clean + Private_Clean ≈ 来自文件的页（file-backed clean pages）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Shared_Dirty ≈ 各种共享可写的内存，大头是 shmem/tmpfs/共享匿名&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="568" x="1002" y="790" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
