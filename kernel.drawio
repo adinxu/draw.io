@@ -3162,7 +3162,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c0ZoZ4gG6LoBvfkcMpz8" name="mm">
-    <mxGraphModel dx="1156" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1192" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3808,6 +3808,12 @@
         </mxCell>
         <mxCell id="6V9zXTe7_QeFomHEVq9p-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="指向 page cache（不是新类型）-&amp;gt;虚拟内存层面" vertex="1">
           <mxGeometry height="9" width="270" x="1030" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-8" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="这个页只被这个进程用" vertex="1">
+          <mxGeometry height="80" width="120" x="877.2" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="6V9zXTe7_QeFomHEVq9p-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="这个页可被多个进程用" vertex="1">
+          <mxGeometry height="80" width="120" x="999.2" y="910" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
