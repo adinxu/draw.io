@@ -3162,7 +3162,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c0ZoZ4gG6LoBvfkcMpz8" name="mm">
-    <mxGraphModel dx="475" dy="277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2037" dy="1189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3819,7 +3819,7 @@
           <mxGeometry height="130" width="568" x="1002" y="790" as="geometry" />
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-1" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout" value="" vertex="1">
-          <mxGeometry height="160" width="230" x="1270" y="120" as="geometry" />
+          <mxGeometry height="220" width="230" x="1270" y="60" as="geometry" />
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-8" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-4">
           <mxGeometry relative="1" as="geometry" />
@@ -3827,30 +3827,39 @@
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-9" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1330" y="183" />
-              <mxPoint x="1330" y="165" />
+              <mxPoint x="1330" y="163" />
+              <mxPoint x="1330" y="145" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-10" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1330" y="188" />
-              <mxPoint x="1330" y="205" />
+              <mxPoint x="1330" y="168" />
+              <mxPoint x="1330" y="185" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="主缺页&lt;div&gt;(只是在加载缺失的页)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="10" width="30" x="1285" y="180" as="geometry" />
+          <mxGeometry height="10" width="30" x="1285" y="160" as="geometry" />
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="匿名内存首次访问-&amp;gt;RSS必然增加" vertex="1">
-          <mxGeometry height="10" width="99.6" x="1350.4" y="160" as="geometry" />
+          <mxGeometry height="10" width="99.6" x="1350.4" y="140" as="geometry" />
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="文件mmap首次页面加载-&amp;gt;RSS大概率会增加" vertex="1">
-          <mxGeometry height="10" width="129.6" x="1350.4" y="180" as="geometry" />
+          <mxGeometry height="10" width="129.6" x="1350.4" y="160" as="geometry" />
         </mxCell>
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="swap-in,文件页被回收后重新加载-&amp;gt;RSS可能不变" vertex="1">
-          <mxGeometry height="10" width="140" x="1350" y="200" as="geometry" />
+          <mxGeometry height="10" width="140" x="1350" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-15" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="次缺页" vertex="1">
+          <mxGeometry height="10" width="30" x="1285" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="只更新页表，RSS不增加" vertex="1">
+          <mxGeometry height="10" width="80" x="1350" y="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
