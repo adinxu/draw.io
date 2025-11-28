@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Safari/605.1.15" version="29.1.1" pages="14">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.1" pages="14">
   <diagram id="EZiFloyFCKtvxubZ1RHd" name="network">
     <mxGraphModel dx="1693" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3162,7 +3162,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c0ZoZ4gG6LoBvfkcMpz8" name="mm">
-    <mxGraphModel dx="1192" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="475" dy="277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3779,7 +3779,7 @@
         <mxCell id="Oen1btJzzUIYSTyrvqBv-44" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="不与任何文件对应&lt;div&gt;只能通过swap回收&lt;/div&gt;&lt;div&gt;缺页时分配物理内存&lt;/div&gt;&lt;div&gt;drop_caches无法回收&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="190" x="710" y="1040" as="geometry" />
         </mxCell>
-        <mxCell id="Oen1btJzzUIYSTyrvqBv-45" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="背后有文件作为持久化来源&lt;div&gt;回收时不能swap，直接丢弃&lt;/div&gt;&lt;div&gt;缺页时从文件读取&lt;/div&gt;&lt;div&gt;drop_caches可以回收&lt;/div&gt;" vertex="1">
+        <mxCell id="Oen1btJzzUIYSTyrvqBv-45" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="背后有文件作为持久化来源&lt;div&gt;回收时无需swap，直接丢弃&lt;/div&gt;&lt;div&gt;缺页时从文件读取&lt;/div&gt;&lt;div&gt;drop_caches可以回收&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="195" x="710" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="Oen1btJzzUIYSTyrvqBv-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="Cached" vertex="1">
@@ -3817,6 +3817,40 @@
         </mxCell>
         <mxCell id="6V9zXTe7_QeFomHEVq9p-10" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout" value="&lt;p data-start=&quot;3575&quot; data-end=&quot;3622&quot;&gt;&lt;b&gt;/proc/&amp;lt;pid&amp;gt;/smaps字段&lt;/b&gt;&lt;/p&gt;&lt;p data-start=&quot;3575&quot; data-end=&quot;3622&quot; style=&quot;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Private_Dirty ≈ 匿名内存（heap/stack/malloc/COW）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Shared_Clean + Private_Clean ≈ 来自文件的页（file-backed clean pages）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Shared_Dirty ≈ 各种共享可写的内存，大头是 shmem/tmpfs/共享匿名&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="130" width="568" x="1002" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-1" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout" value="" vertex="1">
+          <mxGeometry height="160" width="230" x="1270" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-8" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-9" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="183" />
+              <mxPoint x="1330" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-10" edge="1" parent="1" source="Kmoz3A5HpI7O8_F-vHze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kmoz3A5HpI7O8_F-vHze-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="188" />
+              <mxPoint x="1330" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="主缺页&lt;div&gt;(只是在加载缺失的页)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="30" x="1285" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="匿名内存首次访问-&amp;gt;RSS必然增加" vertex="1">
+          <mxGeometry height="10" width="99.6" x="1350.4" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="文件mmap首次页面加载-&amp;gt;RSS大概率会增加" vertex="1">
+          <mxGeometry height="10" width="129.6" x="1350.4" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kmoz3A5HpI7O8_F-vHze-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="swap-in,文件页被回收后重新加载-&amp;gt;RSS可能不变" vertex="1">
+          <mxGeometry height="10" width="140" x="1350" y="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
