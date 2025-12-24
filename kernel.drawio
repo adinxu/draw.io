@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15" version="29.2.3" pages="14">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15" version="29.2.9" pages="14">
   <diagram id="EZiFloyFCKtvxubZ1RHd" name="network">
     <mxGraphModel dx="1693" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3163,7 +3163,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c0ZoZ4gG6LoBvfkcMpz8" name="mm">
-    <mxGraphModel dx="1619" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1488" dy="386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3862,7 +3862,7 @@
         <mxCell id="Kmoz3A5HpI7O8_F-vHze-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=6;" value="只更新页表，RSS不增加" vertex="1">
           <mxGeometry height="10" width="80" x="1039" y="655" as="geometry" />
         </mxCell>
-        <mxCell id="T8xvHLdcVwDcmiW2yV_9-3" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;fontSize=6;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;只有一个heap VMA,&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;brk只是&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;扩展heap区域&lt;/span&gt;&lt;/div&gt;&lt;div&gt;mmap每次分配新建一个VMA&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;主缺页时的rss增长以页为单位,即4kb&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;malloc分配小块内存(一般&amp;lt;128k)会使用brk&lt;div&gt;分配大块内存使用mmap&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;用户态mallo为了多线程性能，可能为不同线程创建多个arena(逻辑上的heap)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="T8xvHLdcVwDcmiW2yV_9-3" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;fontSize=6;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;只有一个主heap VMA,&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;brk只是&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;扩展heap区域&lt;/span&gt;&lt;/div&gt;&lt;div&gt;mmap每次分配新建一个VMA&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;主缺页时的rss增长以页为单位,即4kb&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;malloc分配小块内存(一般&amp;lt;128k)会使用brk&lt;div&gt;分配大块内存使用mmap,不是每次malloc都调用brk/mmap&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;用户态mallo为了多线程性能，可能为不同线程创建多个arena(逻辑上的heap)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="182" x="439" y="705" as="geometry" />
         </mxCell>
       </root>
