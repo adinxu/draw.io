@@ -4017,7 +4017,7 @@
         <mxCell id="awlLQa8w9Db2Jx-vXvd--4" parent="m6RL_cJJqVrjxdbSwfk4-58" style="text;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Helvetica;fontSize=12;" value="..." vertex="1">
           <mxGeometry height="26" width="140" y="104" as="geometry" />
         </mxCell>
-        <mxCell id="m6RL_cJJqVrjxdbSwfk4-59" parent="m6RL_cJJqVrjxdbSwfk4-58" style="text;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Helvetica;fontSize=12;" value="mm" vertex="1">
+        <mxCell id="m6RL_cJJqVrjxdbSwfk4-59" parent="m6RL_cJJqVrjxdbSwfk4-58" style="text;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Helvetica;fontSize=12;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" value="mm" vertex="1">
           <mxGeometry height="26" width="140" y="130" as="geometry" />
         </mxCell>
         <mxCell id="m6RL_cJJqVrjxdbSwfk4-60" parent="m6RL_cJJqVrjxdbSwfk4-58" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="..." vertex="1">
